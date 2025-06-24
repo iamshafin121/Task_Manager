@@ -21,6 +21,10 @@ Key Features:
 - Dashboard with today’s tasks summary  
 - Custom theme (light/dark mode)
 
+Technology:
+-HTML,CSS,JS
+-Python, Django
+
 
 # Credits
 
