@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="T-M.jpg" height="320" width="800" alt="Task-Manager">
+  <img src="T-M.jpg" height="400" width="800" alt="Task-Manager">
 </p>
 
 <h1 align="center">Task Manager</h1>  
