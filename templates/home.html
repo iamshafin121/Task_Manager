@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">Task Manager</a>
+            </div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="{% url 'accounts:login' %}">Login</a></li>
+                <li><a href="{% url 'accounts:register' %}" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Manage Your Tasks Efficiently</h1>
+            <p>A simple and intuitive task manager to help you stay organized and productive.</p>
+            <a href="{% url 'accounts:register' %}" class="btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Create and Manage Tasks</h3>
+                    <p>Easily create, edit, and delete tasks. Set due dates and priorities to stay on top of your work.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Organize with Projects</h3>
+                    <p>Group your tasks into projects to keep everything organized and easy to find.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Track Your Progress</h3>
+                    <p>Visualize your progress with our dashboard and see how much you've accomplished.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Task Manager. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'home.js' %}"></script>
+</body>
+</html>

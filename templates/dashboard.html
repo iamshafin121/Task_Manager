@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Design Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="{% static 'dashboard.css' %}">
+</head>
+<body>
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Logo</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active"><span>🏠</span> Dashboard</li>
+          <li><span>✔️</span> Tasks</li>
+          <li><span>📥</span> Inbox</li>
+          <li><span>📅</span> Calendar</li>
+          <li><span>⚙️</span> Settings</li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="{% url 'accounts:logout' %}" class="sidebar-btn">Logout</a>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1>Dashboard</h1>
+        <div class="header-actions">
+          <input type="search" placeholder="Search tasks..."/>
+          <button class="notif-btn">🔔<span class="notif-dot"></span></button>
+          <button class="add-btn">+ Add Task</button>
+        </div>
+      </header>
+
+      <section class="dashboard-stats">
+        <div class="stat-card purple">
+          <div class="stat-icon">📋</div>
+          <div>
+            <div class="stat-value">31</div>
+            <div class="stat-label">Total Tasks</div>
+          </div>
+        </div>
+        <div class="stat-card blue">
+          <div class="stat-icon">✅</div>
+          <div>
+            <div class="stat-value">15</div>
+            <div class="stat-label">Completed</div>
+          </div>
+        </div>
+        <div class="stat-card orange">
+          <div class="stat-icon">🔥</div>
+          <div>
+            <div class="stat-value">2</div>
+            <div class="stat-label">High Priority</div>
+          </div>
+        </div>
+        <div class="stat-card green">
+          <div class="stat-icon">💬</div>
+          <div>
+            <div class="stat-value">8</div>
+            <div class="stat-label">Comments</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ai-summary">
+        <div class="ai-summary-icon">🤖</div>
+        <div class="ai-summary-content">
+          <h2>AI Task Summary</h2>
+          <p>
+            Based on your schedule, you should focus on completing the <b>"Quarterly Report"</b> task today as it's high priority and due tomorrow. You've been making good progress on your weekly goals!
+          </p>
+          <div class="ai-summary-actions">
+            <button class="ai-btn helpful">👍 Helpful</button>
+            <button class="ai-btn nah">👎 Not Helpful</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="filters">
+        📅 All | Today | This Week | Unread — (Example section for task filters/tables/cards below. Build more as needed.)
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+  
+</body>
+</html>

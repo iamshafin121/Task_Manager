@@ -1,0 +1,45 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'auth.css' %}">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register</h2>
+    <form method="post" action="{% url 'accounts:register' %}">
+      {% csrf_token %}
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <div>
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password" id="confirm_password" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <div id="register-message"></div>
+    <div class="form-footer">
+      Already have an account? <a href="{% url 'accounts:login' %}">Login</a>
+    </div>
+  </div>
+  
+</body>
+</html>
