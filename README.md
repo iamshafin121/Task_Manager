@@ -68,5 +68,4 @@ Built by:
 This project is **open-source** and available under the **MIT License**.  
 
 ---
-
 ### ⭐ If you like this project, don’t forget to star the repo!  
