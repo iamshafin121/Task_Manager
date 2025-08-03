@@ -57,8 +57,8 @@ This Task Manager app helps users manage daily responsibilities efficiently with
 ## Developers  
 
 Built by:  
-- [Md Rakibul Hassan](https://www.linkedin.com/in/md-rakibul-hassan-507b00308)  
-- [Md Shafin Ahmed Hredoy](https://www.linkedin.com/in/iamshafin121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
+- [Md Rakibul Hassan](www.linkedin.com/in/mdrakibulhassanmiyaji)  
+- [Md Shafin Ahmed Hredoy](https://www.linkedin.com/in/mdtahsinazad020/)  
 - [Md. Tahsin Azad Shaikat](https://www.linkedin.com/in/mdtahsinazad020?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
 
 ---
